@@ -1,0 +1,17 @@
+namedlist>=1.7
+parsley>=1.3
+pymssql>=2.1.4
+jplephem>=2.7
+scipy
+git+https://github.com/astropy/photutils.git#egg=photutils
+git+https://github.com/spacetelescope/asdf.git#egg=asdf
+git+https://github.com/spacetelescope/crds.git#egg=crds
+git+https://github.com/spacetelescope/drizzle.git#egg=drizzle
+git+https://github.com/spacetelescope/gwcs.git#egg=gwcs
+git+https://github.com/spacetelescope/stsci.image.git#egg=stsci.image
+git+https://github.com/spacetelescope/stsci.stimage.git#egg=stsci.stimage
+git+https://github.com/spacetelescope/stsci.imagestats.git#egg=stsci.imagestats
+git+https://github.com/spacetelescope/stsci.tools.git#egg=stsci.tools
+git+https://github.com/spacetelescope/spherical_geometry.git#egg=spherical_geometry
+git+https://github.com/spacetelescope/verhawk.git#egg=verhawk
+git+https://github.com/spacetelescope/jwst.git#egg=jwst
