@@ -1,4 +1,5 @@
-FROM astroconda/python:3.7.1
+ARG PYTHON_VERSION
+FROM astroconda/python:${PYTHON_VERSION}
 LABEL maintainer="jhunk@stsci.edu" \
       vendor="Space Telescope Science Institute"
 
