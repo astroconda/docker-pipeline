@@ -2,15 +2,10 @@
 set -e
 set -x
 
-prefix="${TOOLCHAIN}"
 sysconfdir="${TOOLCHAIN_BUILD}/etc/${PIPELINE}"
 reqdir=${sysconfdir}/pkgs
 blddir=builds
 
-export PATH="${prefix}/bin:${PATH}"
-export CFLAGS="-I${prefix}/include"
-export LDFLAGS="-L${prefix}/lib -Wl,-rpath=${prefix}/lib"
-export PREFIX="${prefix}"
 
 function pre()
 {

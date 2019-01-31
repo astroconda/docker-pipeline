@@ -33,8 +33,8 @@ function build()
 function post()
 {
     rm -rf ~/.cache/pip
-    [[ -d src ]] && rm -rf src
-    [[ -f gmon.out ]] && rm -rf gmon.out
+    [[ -d src ]] && rm -rf src || true
+    [[ -f gmon.out ]] && rm -rf gmon.out || true
 }
 
 build
