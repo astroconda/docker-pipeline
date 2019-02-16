@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 prefix="${TOOLCHAIN}"
-taskdir=${TOOLCHAIN_BUILD}/etc/${PIPELINE}/tasks
+taskdir="${TOOLCHAIN_BUILD}/etc/${PIPELINE}/tasks"
 
 export _maxjobs=$(getconf _NPROCESSORS_ONLN)
 export PATH="${prefix}/bin:${PATH}"
