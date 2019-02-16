@@ -1,5 +1,6 @@
-ARG PYTHON_VERSION
-FROM astroconda/python:${PYTHON_VERSION}
+ARG HUB=${HUB:-}
+ARG PYTHON_VERSION=${PYTHON_VERSION:-}
+FROM "${HUB}/python:${PYTHON_VERSION}"
 LABEL maintainer="jhunk@stsci.edu" \
       vendor="Space Telescope Science Institute"
 
