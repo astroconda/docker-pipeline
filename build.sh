@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 HUB=${3:-astroconda}
 PROJECT=${HUB}/pipeline
 PROJECT_VERSION="${1}"
@@ -43,6 +42,7 @@ case "${HUB}" in
         docker login
         ;;
 esac
+set -x
 
 TAGS+=( "-t ${PROJECT}:${image_tag}" )
 PIPELINE="${PROJECT_VERSION}"
