@@ -1,6 +1,6 @@
 #!/bin/bash
 HUB=${3:-astroconda}
-PROJECT=${HUB}/pipeline
+PROJECT=${HUB}/datb-tc-pipeline
 PROJECT_VERSION="${1}"
 PYTHON_VERSION="${2}"
 TAGS=()
