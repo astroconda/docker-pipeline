@@ -6,6 +6,13 @@ PYTHON_VERSION="${2}"
 TAGS=()
 SUFFIX=
 image_tag="${PROJECT_VERSION}"
+EXTRA=()
+SNAPSHOT=${SNAPSHOT:-}
+
+if [[ -n ${SNAPSHOT} ]]; then
+    EXTRA+=( "--no-cache" )
+    EXTRA+=( "--pull" )
+fi
 
 if [[ -z ${PROJECT_VERSION} ]]; then
     echo "Pipeline version required [e.g. hstdp-2018.3]"
@@ -46,7 +53,9 @@ set -x
 
 TAGS+=( "-t ${PROJECT}:${image_tag}" )
 PIPELINE="${PROJECT_VERSION}"
-docker build ${TAGS[@]} \
+docker build \
+    ${EXTRA[@]} \
+    ${TAGS[@]} \
     --build-arg HUB="${HUB}" \
     --build-arg PYTHON_VERSION="${PYTHON_VERSION}" \
     --build-arg PIPELINE="${PROJECT_VERSION}" \
