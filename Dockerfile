@@ -1,6 +1,6 @@
 ARG HUB=${HUB:-}
 ARG PYTHON_VERSION=${PYTHON_VERSION:-}
-FROM "${HUB}/python:${PYTHON_VERSION}"
+FROM "${HUB}/datb-tc-python:${PYTHON_VERSION}"
 LABEL maintainer="jhunk@stsci.edu" \
       vendor="Space Telescope Science Institute"
 
