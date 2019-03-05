@@ -1,5 +1,3 @@
 nose
 pytest
 pytest-xdist
-pytest-astropy
-pytest-virtualenv
