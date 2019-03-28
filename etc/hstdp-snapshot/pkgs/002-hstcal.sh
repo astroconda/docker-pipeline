@@ -1,6 +1,6 @@
 #!/bin/bash -e
 name=hstcal
-version=2.2.0
+version=master
 url="https://github.com/spacetelescope/${name}"
 
 # Grab a version of WAF that isn't broken
