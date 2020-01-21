@@ -1,0 +1,26 @@
+parsley==1.3
+d2to1==0.2.12
+stsci.convolve==2.2.2
+stsci.imagestats==1.6.2
+stsci.stimage==0.2.2
+crds==7.3.3
+pysynphot==0.9.12
+reftools==1.7.5 # packaging fixes, 2019.5 wants 1.7.3
+spherical-geometry==1.2.18
+stregion==1.1.4
+stsci.ndimage==0.10.3 # packaging fixes, 2019.5 wants 0.10.1
+stsci.tools==3.6.0
+acstools==3.0.0
+calcos==3.3.7
+fitsblender==0.3.6 # packaging fixes, 2019.5 wants 0.3.5
+nictools==1.1.5 # packaging fixes, 2019.5 wants 1.1.4
+stistools==1.3.0
+stsci.image==2.3.0
+stsci.imagemanip==1.1.4
+stwcs==1.5.1
+wfc3tools==1.3.5
+wfpc2tools==1.0.5
+costools==1.2.3
+stsci.skypac==1.0.4
+gwcs==0.10.0
+drizzlepac==3.1.3
